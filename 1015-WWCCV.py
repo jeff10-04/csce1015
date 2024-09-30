@@ -4,7 +4,7 @@ import luhn
 
 # a function that uses the 'luhn' code - it takes a 'card_number' and returns 'true' or 'false' if the card is valid.
 
-def is_credit_card_valid(card_number): 
+def is_credit_card_valid(card_number):    
 
     return luhn.verify(card_number)
 
@@ -26,6 +26,7 @@ else:
 
     print("The credit card number is invalid.")
 
+
 def run_tests():
 
     assert is_credit_card_valid("4111111111111111"), '4111111111111111 should pass but did not'
@@ -38,4 +39,4 @@ def run_tests():
 
     assert not is_credit_card_valid("000000000000"), 'This is a bad test and we will get an error message'
 
-run_tests()
+run_tests() 
